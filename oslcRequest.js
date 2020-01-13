@@ -36,8 +36,7 @@ request = request.defaults({
 	},
 	strictSSL: false,  		  // no need for certificates
 	jar: cookies,                // use the cookie jar to save cookies
-	followAllRedirects: true,  // for FORM based authentication
-	ciphers: "EDH-RSA-DES-CBC3-SHA"
+	followAllRedirects: true  // for FORM based authentication
 })
 request.cookies = cookies;
 request.mode='no-cors';

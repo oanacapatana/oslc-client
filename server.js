@@ -95,7 +95,7 @@ connect(serviceProviders, callback) {
 	// Get the Jazz rootservices document for OSLC v2
 	// This does not require authentication
 	_self.read(_self.serverURI+'/rootservices', function gotRootServices(err, resource) {
-		if (err) return console.error("Could not read rootservices for "+_self.serverURI)
+		if (err) return console.error(err)
 		_self.rootservices = new RootServices(resource.id.uri, resource.kb)
 		// read the ServiceProviderCatalog, this does require authentication
 		var catalogURI = _self.rootservices.serviceProviderCatalog(serviceProviders)

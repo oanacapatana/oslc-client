@@ -30,7 +30,7 @@
   "dependencies": {
     "async": "^2.6.3",
     "browser-request": "^0.3.3",
-    "rdflib": "^0.18.0",
+    "rdflib": "^2.1.7",
     "request": "^2.88.2",
     "urijs": "^1.19.4",
     "xmlhttprequest": "^1.8.0"
